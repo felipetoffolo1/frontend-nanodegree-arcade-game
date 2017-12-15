@@ -1,6 +1,28 @@
-frontend-nanodegree-arcade-game
+Arcade Game
 ===============================
+Recreation of a classic Arcade Game.
+It is all made with only html, js e css. No **js third-party libs**
+Made for the Udacity Nanodegree
 
-Students should use this [rubric](https://review.udacity.com/#!/projects/2696458597/rubric) for self-checking their submission. Make sure the functions you write are **object-oriented** - either class functions (like Player and Enemy) or class prototype functions such as Enemy.prototype.checkCollisions, and that the keyword 'this' is used appropriately within your class and class prototype functions to refer to the object the function is called upon. Also be sure that the **readme.md** file is updated with your instructions on both how to 1. Run and 2. Play your arcade game.
+Play it [here!!](https://felipetoffolo1.github.io/frontend-nanodegree-arcade-game/)
 
-For detailed instructions on how to get started, check out this [guide](https://docs.google.com/document/d/1v01aScPjSWCCWQLIpFqvg3-vXLH2e8_SZQKC8jNO0Dc/pub?embedded=true).
+## How it works!
+This game is made using ´OOP´ (Object-oriented Programing) Javascript.
+### Classes
+The game has to main classes **Game** and **Game Element**
+#### Game
+This is constructor is called every time we want to start a new Game.
+In there are all the game properties, as start time,number of wins, etc..
+
+#### Game Elemt
+The Game Element class is a generic class for the element that should be rendered on the game. There is 3 extensions of this class
+#### Player
+The game player is the hero of the game. The little character that we will move
+#### Enemies
+The enmies of our hero. Where dangerous creatures
+#### Gems
+Some bling for the playes to get.
+
+## Next steps
+ - [ ] Build some funny messages when the player loses
+ - [ ] Let the user choose the player image
