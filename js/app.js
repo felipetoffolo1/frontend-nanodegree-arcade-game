@@ -146,7 +146,7 @@ class Game {
  * @property {number} xDist -  The movement size for the elements to be used on each step on the x axis
  * @property {number} yDist -  The movement size for the elements to be used on each step the y axis
  */
-class gameElement {
+class GameElement {
     constructor({
         x = 0,
         y = 65,
@@ -192,7 +192,7 @@ class gameElement {
  * 
  * @property {string} speed - speed of the enemy
  */
-class Enemy extends gameElement {
+class Enemy extends GameElement {
     constructor({
         x,
         y,
@@ -223,7 +223,7 @@ class Enemy extends gameElement {
  * 
  * @property {string} winner - True if the player win the game
  */
-class Player extends gameElement {
+class Player extends GameElement {
     constructor({
         x = 200,
         y = 385,
@@ -278,7 +278,7 @@ class Player extends gameElement {
  * @param {number} y - position on the y axis
  * @param {string} sprite - image of the player
  */
-class Gem extends gameElement {
+class Gem extends GameElement {
     constructor({
         x,
         y = 65,
