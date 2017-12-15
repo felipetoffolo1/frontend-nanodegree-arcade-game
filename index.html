@@ -1,13 +1,45 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="UTF-8">
     <title>Effective JavaScript: Frogger</title>
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Bungee" rel="stylesheet">
+
 </head>
+
 <body>
+    <div class="flex-container">
+        <div class="sidebar">
+            <h1>Arcade Game</h1>
+            <div class="widget-container">
+                <div class="subtitle-container">
+
+                    <h2>Wins</h2>
+                </div>
+                <p id="win-counter">0</p>
+                <div class="subtitle-container">
+
+                    <h2>Gems</h2>
+                </div>
+                <p id="gem-counter">0</p>
+                <div class="subtitle-container">
+
+                    <h2>Time</h2>
+                </div>
+                <p id="timer">00:00</p>
+                <div>
+                    <button id="reset-button" class="hide button">Restart</button>
+                </div>
+            </div>
+        </div>
+        <div id="canvas-container" class="canvas-container">
+        </div>
+    </div>
     <script src="js/resources.js"></script>
     <script src="js/app.js"></script>
     <script src="js/engine.js"></script>
 </body>
+
 </html>
