@@ -242,7 +242,6 @@ class Player extends GameElement {
      * @param {string} input - keyboad input
      */
     handleInput(input) {
-
         switch (input) {
             case 'up':
                 var newY = this.y - this.yDist
@@ -316,6 +315,14 @@ document.addEventListener('keyup', function (e) {
         39: 'right',
         40: 'down'
     };
-
     currentGame.player.handleInput(allowedKeys[e.keyCode]);
 });
+
+/** Send movement for mobile users */
+var mobileMovement = function (move) {
+    currentGame.player.handleInput(this.id);
+}
+document.getElementById('up').addEventListener("click", mobileMovement);
+document.getElementById('down').addEventListener("click", mobileMovement);
+document.getElementById('left').addEventListener("click", mobileMovement);
+document.getElementById('right').addEventListener("click", mobileMovement)

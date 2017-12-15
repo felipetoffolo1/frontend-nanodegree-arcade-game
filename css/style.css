@@ -104,5 +104,66 @@ body {
     transition: none;
 }
 
+.control-container {
+    margin: auto;
+    margin-top: 50px;
+    display: flex;
+    flex-flow: wrap;
+    background-color: white;
+    height: 400px;
+    width: 400px;
+}
 
-/* #558C89 #74AFAD #D9853B #ECECEA */
+.arrow {
+    background-color: white;
+    box-sizing: border-box;
+    height: 150px;
+    width: 150px;
+    border-style: solid;
+    border-color: #558C89;
+    border-width: 0px 1px 1px 0px;
+    transition: border-width 150ms ease-in-out;
+}
+
+.arrow:hover {
+    border-bottom-width: 4px;
+    border-right-width: 4px;
+}
+
+.arrow-down {
+    transform: rotate(45deg);
+}
+
+.arrow-up {
+    transform: rotate(-135deg);
+}
+
+.arrow-left {
+    transform: rotate(135deg);
+    margin-right: 10px;
+}
+
+.arrow-right {
+    transform: rotate(-45deg);
+    margin-left: 10px;
+}
+
+.arrow-container-one {
+    width: 400px
+}
+
+.arrow-container-right {
+    width: 180px;
+    margin-left: 15px
+}
+
+.arrow-container-left {
+    width: 180px;
+    margin-right: 15px
+}
+
+@media (min-width: 760px) {
+    .control-container {
+        display: none;
+    }
+}
