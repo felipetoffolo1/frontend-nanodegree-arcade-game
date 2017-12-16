@@ -327,3 +327,6 @@ document.getElementById('up').addEventListener("touchstart", mobileMovement);
 document.getElementById('down').addEventListener("touchstart", mobileMovement);
 document.getElementById('left').addEventListener("touchstart", mobileMovement);
 document.getElementById('right').addEventListener("touchstart", mobileMovement)
+document.getElementById('control-container').addEventListener("touchstart", function(e){
+    e.preventDefault();
+})
