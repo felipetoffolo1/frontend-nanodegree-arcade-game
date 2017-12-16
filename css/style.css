@@ -111,9 +111,7 @@ body {
     display: flex;
     flex-flow: wrap;
     background-color: white;
-    height: 400px;
-    min-width: 400px;
-    width: 100%;
+    width: 765px;
 }
 
 .arrow {
@@ -156,7 +154,6 @@ body {
 }
 
 .arrow-container-right {
-    /* margin-left: 15px; */
     min-width: 180px;
     width: 50%;
 }
@@ -164,7 +161,6 @@ body {
 .arrow-container-left {
     min-width: 180px;
     width: 50%;
-    /* margin-right: 15px */
 }
 
 @media (min-width: 760px) {

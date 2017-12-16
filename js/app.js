@@ -319,10 +319,11 @@ document.addEventListener('keyup', function (e) {
 });
 
 /** Send movement for mobile users */
-var mobileMovement = function (move) {
+var mobileMovement = function (e) {
+    e.preventDefault();
     currentGame.player.handleInput(this.id);
 }
-document.getElementById('up').addEventListener("click", mobileMovement);
-document.getElementById('down').addEventListener("click", mobileMovement);
-document.getElementById('left').addEventListener("click", mobileMovement);
-document.getElementById('right').addEventListener("click", mobileMovement)
+document.getElementById('up').addEventListener("touchstart", mobileMovement);
+document.getElementById('down').addEventListener("touchstart", mobileMovement);
+document.getElementById('left').addEventListener("touchstart", mobileMovement);
+document.getElementById('right').addEventListener("touchstart", mobileMovement)
