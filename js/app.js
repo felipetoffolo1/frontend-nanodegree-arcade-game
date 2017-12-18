@@ -247,15 +247,17 @@ class Player extends GameElement {
                 var newY = this.y - this.yDist
                 newY >= -30 ? this.y = newY : '';
                 break;
-            case 'down':
+                case 'down':
                 var newY = this.y + this.yDist
                 newY <= 385 ? this.y = newY : '';
                 break;
-            case 'right':
-                this.x += this.xDist
+                case 'right':
+                var newX = this.x + this.xDist
+                newX <= 400 ? this.x = newX : '';
                 break;
-            case 'left':
-                this.x -= this.xDist
+                case 'left':
+                var newX = this.x - this.xDist
+                newX >= 0 ? this.x = newX : '';
                 break;
 
             default:
@@ -297,7 +299,7 @@ class Gem extends GameElement {
         this.x = -100;
         this.y = -100;
     }
-    /** FUnction to be called when a player collect the gem */
+    /** Function to be called when a player collect the gem */
     collected(game) {
         this.hide();
         game.collectedGems++;
